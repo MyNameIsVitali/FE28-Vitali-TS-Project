@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// @ts-ignore
+import styles from "./App.module.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Button = ({ title, onClick, className }: any) => {
+    // const onClick = () => {};
+    // const title = "Push";
+    return (
+        <div onClick={onClick} className={`${styles.button} ${className}`}>
+            {title}
+        </div>
+    );
+};
+
+export const App = () => {
+    return (
+        <div className={styles.app}>
+            <Button
+                title={"ONE"}
+                onClick={() => alert("Privet!")}
+                className={styles.colorOne}
+            />
+            <Button
+                title={"TWO"}
+                onClick={() => alert("Kak dela?")}
+                className={styles.colorTwo}
+            />
+            <Button
+                title={"THREE"}
+                onClick={() => alert("ok")}
+                className={styles.colorThree}
+            />
+            <button
+                title="fff"
+                className={`${styles.button} ${styles.colorTwo}`}
+                disabled={false}
+            />
+        </div>
+    );
+};
 
 export default App;

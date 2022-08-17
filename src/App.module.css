@@ -1,0 +1,33 @@
+.app {
+    background-color: rgb(140, 228, 174);
+    height: 500px;
+}
+
+.button {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(207, 140, 228);
+    margin: 20px;
+}
+
+.colorOne {
+    background-color: rgb(103, 172, 87);
+}
+
+.colorOne:hover {
+    background-color: rgb(84, 218, 50);
+}
+
+.colorTwo {
+    background-color: rgb(232, 218, 238);
+}
+.colorTwo:hover {
+    background-color: rgb(175, 66, 218);
+}
+.colorThree {
+    background-color: rgb(131, 141, 235);
+}
+.colorThree:hover {
+    background-color: rgb(61, 67, 145);
+}

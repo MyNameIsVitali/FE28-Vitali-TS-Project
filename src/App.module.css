@@ -5,29 +5,42 @@
 
 .button {
     width: 200px;
-    height: 100px;
+    height: 56px;
     text-align: center;
-    background-color: rgb(207, 140, 228);
+    color: #8d8e97;
+    line-height: 54px;
+    size: 18px;
+    font-weight: 600;
+    border-radius: 2px;
+    /* padding-top: 15px; */
+    /* background-color: #e8e8e8; */
     margin: 20px;
 }
 
 .colorOne {
-    background-color: rgb(103, 172, 87);
+    background-color: #2231aa;
+    color: aliceblue;
 }
 
 .colorOne:hover {
-    background-color: rgb(84, 218, 50);
+    background-color: #5360cd;
+}
+
+.buttondis {
+    background-color: #e8e8e8;
 }
 
 .colorTwo {
-    background-color: rgb(232, 218, 238);
+    background-color: #e8e8e8;
+    color: #000000;
 }
 .colorTwo:hover {
-    background-color: rgb(175, 66, 218);
+    background-color: #dadada;
 }
 .colorThree {
-    background-color: rgb(131, 141, 235);
+    background-color: aliceblue;
+    color: #fd3419;
 }
 .colorThree:hover {
-    background-color: rgb(61, 67, 145);
+    background-color: #e5e5e5;
 }
